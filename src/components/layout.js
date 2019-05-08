@@ -12,7 +12,9 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children }) => {
+
+  return (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -26,11 +28,11 @@ const Layout = ({ children, data }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        {children()}
+        {children}
       </>
     )}
   />
-)
+)}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
