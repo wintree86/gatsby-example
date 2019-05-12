@@ -7,8 +7,8 @@ const Footer = ({data, children}) => (
     <Text>Tweet “Prototype and build apps with React and Swift. New courses by @MengTo”</Text>
     <Button>Tweet</Button>
     <LinkGroup>
-      {data.allContentfulLink.edges.map(edge => (
-        <a href={edge.node.url}>{edge.node.title}</a>
+      {data.allContentfulLink.edges.map((edge,idx) => (
+        <a href={edge.node.url} key={idx}>{edge.node.title}</a>
       ))}
     </LinkGroup>
     <Copyright>{children}</Copyright>

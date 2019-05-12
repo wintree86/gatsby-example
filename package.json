@@ -18,11 +18,13 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-stripe-checkout": "^2.6.3",
     "styled-components": "^4.2.0",
     "url-loader": "^1.1.2"
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.0",
+    "stripe": "^6.34.0"
   },
   "keywords": [
     "gatsby"
